@@ -1,0 +1,107 @@
+@model tlfame69.WebUI.Areas.Admin.Models.ProductUpsertFormViewModel
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">
+                   @(Model.Product.Id == 0 ? "Create" : "Update") Product
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body">
+        <form method="post" enctype="multipart/form-data" class="row" asp-area="Admin" asp-controller="Product" asp-action="Upsert">
+            <input type="hidden" asp-for="@Model.Product.Id"/>
+            <input type="hidden" asp-for="Product.ImageUrl"/>
+            <div class="col-10">
+                <div class="border p-3">
+                    <div class="form-floating py-2 col-12">
+                        <input asp-for="@Model.Product.Title" class="form-control border-0 shadow"/>
+                        <label class="ms-2">Title</label>
+                        <span asp-validation-for="@Model.Product.Title" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating py-2 col-12">
+                        <textarea asp-for="@Model.Product.Description" class="form-control border-0 shadow"></textarea>
+                        <label class="ms-2">Description</label>
+                        <span asp-validation-for="@Model.Product.Description" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating py-2 col-12">
+                        <input asp-for="@Model.Product.ISBN" class="form-control border-0 shadow"/>
+                        <label class="ms-2">ISBN</label>
+                        <span asp-validation-for="@Model.Product.ISBN" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating py-2 col-12">
+                        <input asp-for="@Model.Product.Author" class="form-control border-0 shadow"/>
+                        <label class="ms-2">Author</label>
+                        <span asp-validation-for="@Model.Product.Author" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating py-2 col-12">
+                        <input asp-for="@Model.Product.PriceList" class="form-control border-0 shadow"/>
+                        <label class="ms-2">Price List</label>
+                        <span asp-validation-for="@Model.Product.PriceList" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating py-2 col-12">
+                        <input asp-for="@Model.Product.Price" class="form-control border-0 shadow"/>
+                        <label class="ms-2">Price for 1-50</label>
+                        <span asp-validation-for="@Model.Product.Price" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating py-2 col-12">
+                        <input asp-for="@Model.Product.PriceForMoreThan50" class="form-control border-0 shadow"/>
+                        <label class="ms-2">Price for 50+</label>
+                        <span asp-validation-for="@Model.Product.Price" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating py-2 col-12">
+                        <input asp-for="@Model.Product.PriceForMoreThan100" class="form-control border-0 shadow"/>
+                        <label class="ms-2">Price for 100+</label>
+                        <span asp-validation-for="@Model.Product.PriceForMoreThan100" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating py-2 col-12">
+                        <select asp-for="@Model.Product.CategoryId" class="form-control border-0 shadow">
+                            <option>----- Select one category -----</option>
+                            @foreach (var categorySelectOption in Model.CategorySelectOptions)
+                            {
+                                <option value="@categorySelectOption.Value">@categorySelectOption.Text</option>
+                            }
+                        </select>
+                        <label class="ms-2">Categories</label>
+                        <span asp-validation-for="@Model.Product.CategoryId" class="text-danger"></span>
+                    </div>
+                    <div class="form-floating py-2 col-12">
+                        <input type="file" name="file" class="form-control border-0 shadow"/>
+                        <label class="ms-2">Image Url</label>
+                        <span asp-validation-for="@Model.Product.ImageUrl" class="text-danger"></span>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6 col-md-3">
+                            <a asp-area="Admin" asp-controller="Product" asp-action="Index" class="btn btn-outline-primary border form-control">Back to Category List</a>
+                        </div>
+                        <div class="col-6 col-md-3 text-end">
+                            <button type="submit" class="btn btn-primary form-control">
+                                @(Model.Product.Id == 0 ? "Create" : "Update")
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-2">
+                <img src="@Model.Product.ImageUrl" width="100%" style="border-radius: 5px; border: 1px solid #bbb9b9"/>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+@section Scripts
+{
+    @{
+        <partial name="_ValidationScriptsPartial"/>
+    }
+}

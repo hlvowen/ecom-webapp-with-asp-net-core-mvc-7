@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tlfame69.WebUI", "tlfame69.WebUI\tlfame69.WebUI.csproj", "{960A7401-6791-49AF-A2DC-D755193A870B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tlfame69.DataAccess", "tlfame69.DataAccess\tlfame69.DataAccess.csproj", "{4061DAA2-5891-4749-9253-E79A492214C2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tflame69.Models", "tflame69.Models\tflame69.Models.csproj", "{08292143-7060-4A3C-9FFE-9946BA23046D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "tflame69.Utility", "tflame69.Utility\tflame69.Utility.csproj", "{ECAF8401-14C2-4642-BC90-6DA459833EAE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{960A7401-6791-49AF-A2DC-D755193A870B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{960A7401-6791-49AF-A2DC-D755193A870B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{960A7401-6791-49AF-A2DC-D755193A870B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{960A7401-6791-49AF-A2DC-D755193A870B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4061DAA2-5891-4749-9253-E79A492214C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4061DAA2-5891-4749-9253-E79A492214C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4061DAA2-5891-4749-9253-E79A492214C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4061DAA2-5891-4749-9253-E79A492214C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08292143-7060-4A3C-9FFE-9946BA23046D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08292143-7060-4A3C-9FFE-9946BA23046D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08292143-7060-4A3C-9FFE-9946BA23046D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08292143-7060-4A3C-9FFE-9946BA23046D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ECAF8401-14C2-4642-BC90-6DA459833EAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ECAF8401-14C2-4642-BC90-6DA459833EAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ECAF8401-14C2-4642-BC90-6DA459833EAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ECAF8401-14C2-4642-BC90-6DA459833EAE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

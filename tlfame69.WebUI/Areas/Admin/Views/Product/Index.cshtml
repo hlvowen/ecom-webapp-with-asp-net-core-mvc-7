@@ -1,0 +1,55 @@
+@using tflame69.Models.dbo
+@model List<tflame69.Models.dbo.Product>
+
+@{
+    ViewBag.Title = "title";
+    Layout = "_Layout";
+}
+
+<div class="card shadow border-0 my-4">
+    <div class="card-header bg-secondary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h2 class="text-white py-2">Product List</h2>
+            </div>
+        </div>   
+    </div>
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-6"></div>
+            <div class="col-6 text-end">
+                <a asp-area="Admin" asp-controller="Product" asp-action="Upsert" class="btn btn-primary">
+                    <i class="bi bi-plus-circle"></i> New Product
+                </a>
+            </div>
+        </div>
+        
+        <table id="product-dataTable" class="table table-bordered table-striped">
+                <thead>
+                <tr>
+                    <th>
+                        Title
+                    </th>
+                    <th>
+                        ISBN
+                    </th>
+                    <th>
+                        Author
+                    </th>
+                    <th>
+                        Price
+                    </th>
+                    <th>
+                        Category
+                    </th>
+                    <th></th>
+                </tr>
+                </thead>
+        </table>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script src="~/js/AdminArea/Product/product.js"></script>
+}

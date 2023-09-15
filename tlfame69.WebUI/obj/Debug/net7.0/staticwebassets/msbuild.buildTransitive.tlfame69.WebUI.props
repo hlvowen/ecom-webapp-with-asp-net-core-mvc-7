@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../buildMultiTargeting/tlfame69.WebUI.props" />
+</Project>

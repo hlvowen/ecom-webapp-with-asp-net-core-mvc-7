@@ -1,0 +1,18 @@
+
+@if (TempData["success"] is not null)
+{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/toastr/dist/js/toastr.min.js"></script>
+    <script>
+        toastr.success('@TempData["success"]');
+    </script>
+}
+
+@if (TempData["error"] is not null)
+{
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/toastr/dist/js/toastr.min.js"></script>
+    <script>
+        toastr.error('@TempData["error"]');
+    </script>
+}

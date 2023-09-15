@@ -1,0 +1,12 @@
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/bin/Debug/net7.0/tflame69.Utility.deps.json
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/bin/Debug/net7.0/tflame69.Utility.dll
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/bin/Debug/net7.0/tflame69.Utility.pdb
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/obj/Debug/net7.0/tflame69.Utility.csproj.AssemblyReference.cache
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/obj/Debug/net7.0/tflame69.Utility.GeneratedMSBuildEditorConfig.editorconfig
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/obj/Debug/net7.0/tflame69.Utility.AssemblyInfoInputs.cache
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/obj/Debug/net7.0/tflame69.Utility.AssemblyInfo.cs
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/obj/Debug/net7.0/tflame69.Utility.csproj.CoreCompileInputs.cache
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/obj/Debug/net7.0/tflame69.Utility.dll
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/obj/Debug/net7.0/refint/tflame69.Utility.dll
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/obj/Debug/net7.0/tflame69.Utility.pdb
+/Users/ovo/Desktop/Pro/Development/Projects/Csharp/BulkyWeb Core/tflame69.Utility/obj/Debug/net7.0/ref/tflame69.Utility.dll
