@@ -1328,6 +1328,9 @@
       "tflame69.Models/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.Identity.Stores": "7.0.10"
+        },
         "compile": {
           "bin/placeholder/tflame69.Models.dll": {}
         },
